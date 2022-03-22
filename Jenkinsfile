@@ -12,7 +12,8 @@ pipeline{
             }
         }
         stage('Archive Artifacts') {
-          steps {
+          steps {  
+                   pwd
                    archiveArtifacts artifacts: '**/*.jAr',
                    allowEmptyArchive: true,
                    fingerprint: true,
