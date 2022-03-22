@@ -18,7 +18,8 @@ pipeline{
                    fingerprint: true,
                    onlyIfSuccessful: true,
                    caseSensitive: false,
-                   followSymlinks: false
+                   followSymlinks: false,
+                   excludes: "./myfol/*"
                   }
               }
          }
