@@ -13,12 +13,11 @@ pipeline{
         }
         stage('Archive Artifacts') {
           steps {  
-                   sh 'pwd'
                    archiveArtifacts artifacts: '**/*.jAr',
                    allowEmptyArchive: true,
                    fingerprint: true,
                    onlyIfSuccessful: true,
-                   caseSensitive: true,
+                   caseSensitive: false,
                    followSymlinks: false,
                    excludes: "myfol/*"
                   }
