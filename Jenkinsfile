@@ -13,10 +13,12 @@ pipeline{
         }
         stage('Archive Artifacts') {
           steps {
-                   archiveArtifacts artifacts: '**/*.jar',
+                   archiveArtifacts artifacts: '**/*.jAr',
                    allowEmptyArchive: true,
                    fingerprint: true,
-                   onlyIfSuccessful: true
+                   onlyIfSuccessful: true,
+                   caseSensitive: false,
+                   followSymlinks: false
                   }
               }
          }
