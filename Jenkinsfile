@@ -20,7 +20,7 @@ pipeline{
                    onlyIfSuccessful: true,
                    caseSensitive: false,
                    followSymlinks: false,
-                   excludes: "./myfol/*"
+                   excludes: "myfol/*"
                   }
               }
          }
