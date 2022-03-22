@@ -18,7 +18,7 @@ pipeline{
                    allowEmptyArchive: true,
                    fingerprint: true,
                    onlyIfSuccessful: true,
-                   caseSensitive: false,
+                   caseSensitive: true,
                    followSymlinks: false,
                    excludes: "myfol/*"
                   }
